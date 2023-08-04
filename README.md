@@ -1,9 +1,10 @@
 # Organisations
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.<br>
 
-The designing of this project in FIGMA is found [Here](https://www.figma.com/file/qGhG2LMTySGVQhAWqxhnnv/Tigersoft-Branding?type=design&node-id=0%3A1&mode=design&t=zrCcwAP0CesvPaVs-1).
-The Deployement Project is available [Here](https://tiger-taupe.vercel.apps)
+The designing of this project in FIGMA is found [Here](https://www.figma.com/file/qGhG2LMTySGVQhAWqxhnnv/Tigersoft-Branding?type=design&node-id=0%3A1&mode=design&t=zrCcwAP0CesvPaVs-1).<br>
+
+The Deployement Project is available [Here](https://tiger-taupe.vercel.apps).
 
 ## Development server
 
@@ -27,7 +28,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Author
 
-Names: KALISA NGABO KEVIN.
-Website: [Go to site](https://kalisangabokevin.com)
-Twitter: [kalisa kevin](https://twitter.com/Kalisakevin_)
-LinkedIn: [kalisa kevin](https://www.linkedin.com/in/kalisa-ngabo-kevin-6717781b7)
+Names: KALISA NGABO KEVIN. <br>
+Website: [Go to site](https://kalisangabokevin.com).<br>
+Twitter: [kalisa kevin](https://twitter.com/Kalisakevin_). <br>
+LinkedIn: [kalisa kevin](https://www.linkedin.com/in/kalisa-ngabo-kevin-6717781b7).
