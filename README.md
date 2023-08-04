@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
+The designing of this project in FIGMA is found [Here](https://www.figma.com/file/qGhG2LMTySGVQhAWqxhnnv/Tigersoft-Branding?type=design&node-id=0%3A1&mode=design&t=zrCcwAP0CesvPaVs-1).
+The Deployement Project is available [Here](https://tiger-taupe.vercel.apps)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -22,6 +25,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Names: KALISA NGABO KEVIN.
+Website: [Go to site](https://kalisangabokevin.com)
+Twitter: [kalisa kevin](https://twitter.com/Kalisakevin_)
+LinkedIn: [kalisa kevin](https://www.linkedin.com/in/kalisa-ngabo-kevin-6717781b7)
