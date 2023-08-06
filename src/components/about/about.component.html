@@ -1,8 +1,8 @@
-<section id="#about" class="container mx-auto mt-8 items-center">
-  <h1 class="text-2xl text-center mb-4">
+<section id="about" class="container items-center mx-auto mt-8">
+  <h1 class="mb-4 text-2xl text-center">
     <span class="font-semibold">ABOUT</span> TIGERSOFT
   </h1>
-  <div class="flex gap-10 justify-center items-center">
+  <div class="flex items-center justify-center gap-10">
     <!-- Image on the left -->
     <img
       src="../../assets/images/tigerSoftLogo.png"
@@ -26,14 +26,14 @@
         developed Tiger Application Programming Interface (TigerAPI) that
         integrates Central Bank of Rwanda and other Financial institutions.
       </p>
-      <div class="justify-end flex mt-2">
+      <div class="flex justify-end mt-2">
         <span class="font-bold text-[#F59423]">READ MORE + </span>
       </div>
     </div>
   </div>
 
   <!-- Loop through aboutData and display each item -->
-  <div class="flex gap-20 mt-28 justify-center">
+  <div class="flex justify-center gap-20 mt-28">
     <div *ngFor="let item of aboutData" class="flex flex-col items-center">
       <img [src]="item.icon" alt="{{ item.title }} Icon" class="w-14 h-14" />
       <span class="text-[#F59423] font-medium mt-2 text-lg">{{

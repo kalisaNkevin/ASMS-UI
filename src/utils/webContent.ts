@@ -61,6 +61,21 @@ export const serviceData = [
   }
 ]
 
+export const socialMedia = [
+  {
+    icon:"assets/svgs/fscebook.svg",
+  },
+  {
+    icon:"assets/svgs/twitter.svg",
+  },
+  {
+    icon:"assets/svgs/link.svg",
+  },
+  {
+    icon:"assets/svgs/google.svg",
+  }
+]
+
 export const portfolioData = [
   {
     thumbnail: "assets/images/Banking.jpeg",
