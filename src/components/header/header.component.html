@@ -1,17 +1,82 @@
+<style>
+  /* Style the hamburger button */
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  /* Style the icon bars for the hamburger menu */
+  button span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 4px;
+  }
+
+  /* Transform the hamburger into a cross icon when the menu is open */
+  span.rotate-45 {
+    transform: rotate(45deg);
+  }
+
+  span.rotate--45 {
+    transform: rotate(-45deg);
+  }
+
+  span.opacity-0 {
+    opacity: 0;
+  }
+</style>
+
 <header>
   <nav class="flex items-center justify-between px-4 py-2 bg-[#f2f2f2]">
     <!-- Image on the left -->
     <div class="flex items-center">
-      <img src="path/to/your/image.png" alt="Logo" class="w-10 h-10 mr-2" />
-      <span class="text-white font-bold text-xl">Your Logo</span>
+      <img
+        src="../../assets/images/tigerSoftLogo.png"
+        alt="Logo"
+        class="w-56 h-20 mr-2"
+      />
     </div>
 
-    <!-- Links on the right -->
-    <div class="hidden md:flex space-x-4">
-      <a href="#about" class="text-white hover:text-gray-300">About</a>
-      <a href="#services" class="text-white hover:text-gray-300">Services</a>
-      <a href="#portfolio" class="text-white hover:text-gray-300">Portfolio</a>
-      <a href="#contact" class="text-white hover:text-gray-300">Contact Us</a>
+    <!-- Hamburger icon or Cross icon for small devices -->
+    <div class="md:hidden">
+      <button
+        (click)="toggleNavigation()"
+        class="text-gray-800 border-2 border-red-500 p-2 rounded-sm space-y-1 hover:bg-[#F59423]"
+      >
+        <span
+          class="block w-6 h-0.5 bg-gray-800 transform transition-all duration-300"
+          [class.rotate-45]="!isNavHidden"
+        ></span>
+        <span
+          class="block w-6 h-0.5 bg-gray-800 transform transition-all duration-300"
+          [class.opacity-0]="!isNavHidden"
+        ></span>
+        <span
+          class="block w-6 h-0.5 bg-gray-800 transform transition-all duration-300"
+          [class.rotate--45]="!isNavHidden"
+        ></span>
+      </button>
+    </div>
+
+    <!-- Links on the right or center when the toggle is open -->
+    <div
+      class="hidden md:flex space-x-4"
+      [class.hidden]="isNavHidden"
+      [class.justify-center]="!isNavHidden"
+    >
+      <a href="#about" class="text-[#7E6738] hover:text-[#F59423]">About</a>
+      <a href="#services" class="text-[#7E6738] hover:text-[#F59423]"
+        >Services</a
+      >
+      <a href="#portfolio" class="text-[#7E6738] hover:text-[#F59423]"
+        >Portfolio</a
+      >
+      <a href="#contact" class="text-[#7E6738] hover:text-[#F59423]"
+        >Contact Us</a
+      >
     </div>
   </nav>
 </header>

@@ -1,1 +1,44 @@
-<p>about works!</p>
+<section id="#about" class="container mx-auto mt-8 items-center">
+  <h1 class="text-2xl text-center mb-4">
+    <span class="font-semibold">ABOUT</span> TIGERSOFT
+  </h1>
+  <div class="flex gap-10 justify-center items-center">
+    <!-- Image on the left -->
+    <img
+      src="../../assets/images/tigerSoftLogo.png"
+      alt="Logo"
+      class="w-[300px] h-[100px] mr-2"
+    />
+
+    <div class="flex flex-col w-1/2 text-[#898989]">
+      <p>
+        Tigersoft is a Rwandan private company that has been in business for
+        over the past 20 years, and it is among the leading software companies
+        in Rwanda that rose from the needs to pivot on technology and accelerate
+        socio-economic growth of the country.
+      </p>
+      <p>
+        Tigersoft has built and delivered IT business solutions to the
+        Government and private institutions that range from Ministries to
+        Financial Institutions. It has a track record of enabling system
+        communication through innovative integration among public sectors and
+        between public and private institutions. For instance, Tigersoft
+        developed Tiger Application Programming Interface (TigerAPI) that
+        integrates Central Bank of Rwanda and other Financial institutions.
+      </p>
+      <div class="justify-end flex mt-2">
+        <span class="font-bold text-[#F59423]">READ MORE + </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loop through aboutData and display each item -->
+  <div class="flex gap-20 mt-28 justify-center">
+    <div *ngFor="let item of aboutData" class="flex flex-col items-center">
+      <img [src]="item.icon" alt="{{ item.title }} Icon" class="w-14 h-14" />
+      <span class="text-[#F59423] font-medium mt-2 text-lg">{{
+        item.title
+      }}</span>
+    </div>
+  </div>
+</section>
