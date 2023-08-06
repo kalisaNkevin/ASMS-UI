@@ -1,0 +1,121 @@
+<style>
+  /* carousel.component.css */
+  .carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .left {
+    left: 10px;
+  }
+
+  .right {
+    right: 10px;
+  }
+
+  /* Custom styles for the image container */
+
+  /* Custom styles for the title and description */
+  .carousel-caption {
+    position: absolute;
+    bottom: 150px;
+    left: 100px;
+    color: #fff;
+    padding: 0px;
+    text-align: center; /* Add this line to center the text */
+  }
+
+  .carousel-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    width: 450px; /* Adjust the width as needed */
+  }
+
+  .carousel-description {
+    font-size: 20px;
+    text-align: center;
+    width: 450px; /* Adjust the width as needed */
+  }
+
+  /* Custom alignment classes for captions */
+  .right-caption {
+    left: auto;
+    right: 100px;
+    text-align: right;
+  }
+
+  .center-caption {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+</style>
+
+<section class="mx-auto carousel-container">
+  <c-carousel class="w-full" [animate]="false" transition="crossfade">
+    <c-carousel-indicators></c-carousel-indicators>
+    <c-carousel-inner>
+      <c-carousel-item
+        class="relative"
+        *ngFor="let slide of slides; let i = index"
+      >
+        <img
+          [src]="slide.src"
+          alt="{{ slide.title }}"
+          class="w-full d-block"
+          loading="lazy"
+        />
+        <div
+          class="carousel-caption"
+          [ngClass]="{
+            'right-caption': i === 0 || i === slides.length - 1,
+            'left-caption': i === 1,
+            'center-caption': i === 2 && slides.length !== 3
+          }"
+        >
+          <h3 class="carousel-title font-bold text-[#F59423]">
+            {{ slide.title }}
+          </h3>
+          <p class="carousel-description">{{ slide.subtitle }}</p>
+        </div>
+      </c-carousel-item>
+    </c-carousel-inner>
+  </c-carousel>
+
+  <!-- Previous Button -->
+  <button class="arrow-button left" (click)="prevSlide()">
+    <img src="assets/svgs/left.svg" alt="Previous" />
+  </button>
+
+  <!-- Next Button -->
+  <button class="arrow-button right" (click)="nextSlide()">
+    <img src="assets/svgs/right.svg" alt="Next" />
+  </button>
+
+  <!-- Indicators -->
+  <div class="indicators">
+    <span
+      class="indicator"
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="currentSlideIndex === i"
+      (click)="goToSlide(i)"
+    ></span>
+  </div>
+</section>

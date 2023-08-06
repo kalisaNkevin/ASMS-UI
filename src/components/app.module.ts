@@ -6,8 +6,11 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { CarouselModule } from '@coreui/angular';
+
+
 
 @NgModule({
   declarations: [
@@ -16,13 +19,14 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     PortfolioComponent,
     ServicesComponent,
-    ContactComponent,
+    HomeComponent,
     FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    CarouselModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
